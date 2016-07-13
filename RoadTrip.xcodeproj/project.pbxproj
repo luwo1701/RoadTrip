@@ -16,6 +16,8 @@
 		C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E571D36E81500910E51 /* LaunchScreen.storyboard */; };
 		C5A62E641D36E81500910E51 /* RoadTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E631D36E81500910E51 /* RoadTripTests.m */; };
 		C5A62E6F1D36E81500910E51 /* RoadTripUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */; };
+		C5A62E7F1D36EF5400910E51 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E7E1D36EF5400910E51 /* Media.xcassets */; };
+		C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E861D36F05600910E51 /* BurnRubber.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		C5A62E6A1D36E81500910E51 /* RoadTripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadTripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripUITests.m; sourceTree = "<group>"; };
 		C5A62E701D36E81500910E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A62E7E1D36EF5400910E51 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		C5A62E861D36F05600910E51 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/BurnRubber.aif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				C5A62E471D36E81500910E51 /* main.m */,
+				C5A62E7E1D36EF5400910E51 /* Media.xcassets */,
+				C5A62E861D36F05600910E51 /* BurnRubber.aif */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,8 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */,
 				C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */,
 				C5A62E561D36E81500910E51 /* Assets.xcassets in Resources */,
+				C5A62E7F1D36EF5400910E51 /* Media.xcassets in Resources */,
 				C5A62E541D36E81500910E51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
