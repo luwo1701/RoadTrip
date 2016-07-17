@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C541F10C1D3C28EE009AB754 /* TestDriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */; };
+		C56291261D3B294E00A382C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C56291251D3B294E00A382C8 /* Reachability.m */; };
+		C56291281D3B2AC900A382C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */; };
 		C5A62E481D36E81500910E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E471D36E81500910E51 /* main.m */; };
 		C5A62E4B1D36E81500910E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E4A1D36E81500910E51 /* AppDelegate.m */; };
 		C5A62E4E1D36E81500910E51 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E4D1D36E81500910E51 /* MasterViewController.m */; };
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C541F10A1D3C28EE009AB754 /* TestDriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDriveViewController.h; sourceTree = "<group>"; };
+		C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDriveViewController.m; sourceTree = "<group>"; };
+		C56291241D3B294E00A382C8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../../../Downloads/Reachability/Reachability/Reachability.h; sourceTree = "<group>"; };
+		C56291251D3B294E00A382C8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../../../Downloads/Reachability/Reachability/Reachability.m; sourceTree = "<group>"; };
+		C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C5A62E431D36E81500910E51 /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A62E471D36E81500910E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5A62E491D36E81500910E51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56291281D3B2AC900A382C8 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C541F1091D3C287E009AB754 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C541F10A1D3C28EE009AB754 /* TestDriveViewController.h */,
+				C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		C5A62E3A1D36E81500910E51 = {
 			isa = PBXGroup;
 			children = (
+				C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */,
 				C5A62E451D36E81500910E51 /* RoadTrip */,
 				C5A62E621D36E81500910E51 /* RoadTripTests */,
 				C5A62E6D1D36E81500910E51 /* RoadTripUITests */,
@@ -106,6 +125,7 @@
 		C5A62E451D36E81500910E51 /* RoadTrip */ = {
 			isa = PBXGroup;
 			children = (
+				C541F1091D3C287E009AB754 /* Controllers */,
 				C5A62E491D36E81500910E51 /* AppDelegate.h */,
 				C5A62E4A1D36E81500910E51 /* AppDelegate.m */,
 				C5A62E4C1D36E81500910E51 /* MasterViewController.h */,
@@ -124,6 +144,8 @@
 		C5A62E461D36E81500910E51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C56291241D3B294E00A382C8 /* Reachability.h */,
+				C56291251D3B294E00A382C8 /* Reachability.m */,
 				C5A62E471D36E81500910E51 /* main.m */,
 				C5A62E861D36F05600910E51 /* BurnRubber.aif */,
 			);
@@ -281,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A62E4B1D36E81500910E51 /* AppDelegate.m in Sources */,
+				C541F10C1D3C28EE009AB754 /* TestDriveViewController.m in Sources */,
 				C5A62E4E1D36E81500910E51 /* MasterViewController.m in Sources */,
 				C5A62E481D36E81500910E51 /* main.m in Sources */,
 				C5A62E511D36E81500910E51 /* DetailViewController.m in Sources */,
+				C56291261D3B294E00A382C8 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

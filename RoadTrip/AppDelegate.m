@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "Reachability.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -22,8 +23,31 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    
+    NetworkStatus networkStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
+    
+    if (networkStatus == NotReachable){
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+                                                                       message:@"This is an alert."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        //[alert showViewController:alert sender:]
+        
+        UINavigationController *nvc = (UINavigationController *)[[application windows] objectAtIndex:0].rootViewController;
+        UIViewController *vc = nvc.visibleViewController;
+        [vc presentViewController:alert animated:YES completion:nil];
+        
+        
+    }
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

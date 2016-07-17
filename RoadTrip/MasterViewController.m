@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
        self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+        self.title=@"Road Trip";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
