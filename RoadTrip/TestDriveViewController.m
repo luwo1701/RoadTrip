@@ -9,10 +9,13 @@
 #import "TestDriveViewController.h"
 
 @interface TestDriveViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *testDriveButton;
 @property (weak, nonatomic) IBOutlet UIImageView *car;
 - (IBAction)testDrive:(id)sender;
-
+- (void) rotate;
+- (void) returnCar;
+- (void) continueRotation;
 @end
 
 @implementation TestDriveViewController
