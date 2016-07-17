@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C541F10C1D3C28EE009AB754 /* TestDriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */; };
+		C56291261D3B294E00A382C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C56291251D3B294E00A382C8 /* Reachability.m */; };
+		C56291281D3B2AC900A382C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */; };
 		C5A62E481D36E81500910E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E471D36E81500910E51 /* main.m */; };
 		C5A62E4B1D36E81500910E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E4A1D36E81500910E51 /* AppDelegate.m */; };
 		C5A62E4E1D36E81500910E51 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E4D1D36E81500910E51 /* MasterViewController.m */; };
@@ -16,7 +19,6 @@
 		C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E571D36E81500910E51 /* LaunchScreen.storyboard */; };
 		C5A62E641D36E81500910E51 /* RoadTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E631D36E81500910E51 /* RoadTripTests.m */; };
 		C5A62E6F1D36E81500910E51 /* RoadTripUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */; };
-		C5A62E7F1D36EF5400910E51 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E7E1D36EF5400910E51 /* Media.xcassets */; };
 		C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E861D36F05600910E51 /* BurnRubber.aif */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C541F10A1D3C28EE009AB754 /* TestDriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDriveViewController.h; sourceTree = "<group>"; };
+		C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDriveViewController.m; sourceTree = "<group>"; };
+		C56291241D3B294E00A382C8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../../../Downloads/Reachability/Reachability/Reachability.h; sourceTree = "<group>"; };
+		C56291251D3B294E00A382C8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../../../Downloads/Reachability/Reachability/Reachability.m; sourceTree = "<group>"; };
+		C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C5A62E431D36E81500910E51 /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A62E471D36E81500910E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5A62E491D36E81500910E51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +63,6 @@
 		C5A62E6A1D36E81500910E51 /* RoadTripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadTripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripUITests.m; sourceTree = "<group>"; };
 		C5A62E701D36E81500910E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5A62E7E1D36EF5400910E51 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C5A62E861D36F05600910E51 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/BurnRubber.aif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56291281D3B2AC900A382C8 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C541F1091D3C287E009AB754 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C541F10A1D3C28EE009AB754 /* TestDriveViewController.h */,
+				C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		C5A62E3A1D36E81500910E51 = {
 			isa = PBXGroup;
 			children = (
+				C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */,
 				C5A62E451D36E81500910E51 /* RoadTrip */,
 				C5A62E621D36E81500910E51 /* RoadTripTests */,
 				C5A62E6D1D36E81500910E51 /* RoadTripUITests */,
@@ -108,6 +125,7 @@
 		C5A62E451D36E81500910E51 /* RoadTrip */ = {
 			isa = PBXGroup;
 			children = (
+				C541F1091D3C287E009AB754 /* Controllers */,
 				C5A62E491D36E81500910E51 /* AppDelegate.h */,
 				C5A62E4A1D36E81500910E51 /* AppDelegate.m */,
 				C5A62E4C1D36E81500910E51 /* MasterViewController.h */,
@@ -126,8 +144,9 @@
 		C5A62E461D36E81500910E51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C56291241D3B294E00A382C8 /* Reachability.h */,
+				C56291251D3B294E00A382C8 /* Reachability.m */,
 				C5A62E471D36E81500910E51 /* main.m */,
-				C5A62E7E1D36EF5400910E51 /* Media.xcassets */,
 				C5A62E861D36F05600910E51 /* BurnRubber.aif */,
 			);
 			name = "Supporting Files";
@@ -218,6 +237,7 @@
 				TargetAttributes = {
 					C5A62E421D36E81500910E51 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GT4K6PPZJ6;
 					};
 					C5A62E5E1D36E81500910E51 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -257,7 +277,6 @@
 				C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */,
 				C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */,
 				C5A62E561D36E81500910E51 /* Assets.xcassets in Resources */,
-				C5A62E7F1D36EF5400910E51 /* Media.xcassets in Resources */,
 				C5A62E541D36E81500910E51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A62E4B1D36E81500910E51 /* AppDelegate.m in Sources */,
+				C541F10C1D3C28EE009AB754 /* TestDriveViewController.m in Sources */,
 				C5A62E4E1D36E81500910E51 /* MasterViewController.m in Sources */,
 				C5A62E481D36E81500910E51 /* main.m in Sources */,
 				C5A62E511D36E81500910E51 /* DetailViewController.m in Sources */,
+				C56291261D3B294E00A382C8 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +380,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: luke.worley@colorado.edu (AG2Q6335NT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -404,6 +426,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: luke.worley@colorado.edu (AG2Q6335NT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -429,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RT.RoadTrip;
+				PRODUCT_BUNDLE_IDENTIFIER = RT.LJWRoadTripping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -440,10 +466,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RT.RoadTrip;
+				PRODUCT_BUNDLE_IDENTIFIER = RT.LJWRoadTripping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -512,6 +541,7 @@
 				C5A62E751D36E81500910E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5A62E761D36E81500910E51 /* Build configuration list for PBXNativeTarget "RoadTripTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +550,7 @@
 				C5A62E781D36E81500910E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5A62E791D36E81500910E51 /* Build configuration list for PBXNativeTarget "RoadTripUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +559,7 @@
 				C5A62E7B1D36E81500910E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
