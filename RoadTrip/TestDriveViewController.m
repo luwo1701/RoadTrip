@@ -7,8 +7,16 @@
 //
 
 #import "TestDriveViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface TestDriveViewController ()
+//creates instance variables to keep them hidden in the implementation file
+@interface TestDriveViewController (){
+    AVAudioPlayer *backgroundAudioPlayer;
+    SystemSoundID burningRubberSoundID;
+    BOOL touchInCar;
+    
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *testDriveButton;
 @property (weak, nonatomic) IBOutlet UIImageView *car;
@@ -22,6 +30,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSURL* backgroundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CarRunning" ofType:@"aif"]];
+    //NSLog(backgroundURL.absoluteString);
+    //since it's declared in the @interface backgroundAudio player doesn't have to be declared as such v
+    //AVAudioPlayer* backgroundAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundURL error:nil];
+
+    backgroundAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundURL error:nil];
+    
+    backgroundAudioPlayer.numberOfLoops = -1;
+    [backgroundAudioPlayer prepareToPlay];
+    
+    NSURL* burningRubberURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"BurnRubber" ofType:@"aif"]];
+    
+    
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)burningRubberURL, &burningRubberSoundID);
+    
+    
+    //AVAudioPlayer* backgroundAudioPlayer = - (void)initWithContentsOfURL:backgroundURL
+    //backgroundAudioPlayer.numb
     // Do any additional setup after loading the view.
 }
 
@@ -41,6 +67,11 @@
 */
 
 - (IBAction)testDrive:(id)sender {
+    // plays the burning rubber audio
+    AudioServicesPlaySystemSound (burningRubberSoundID);
+    //after a delay calls playCarSound method that does what it says
+    [self performSelector:@selector(playCarSound) withObject:self afterDelay:0.2];
+    
     //make an object that is the x coordinate of the cars center and y coordinate is top of the screen + half the size of the car images frame plus 100 for the toolbar and start button
     CGPoint center = CGPointMake(self.car.center.x, self.view.frame.origin.y + self.car.frame.size.height/2 + 100);
     
@@ -107,8 +138,21 @@
         self.car.transform = transform;
     };
     
-    [UIView animateWithDuration:3 animations:animation completion:NULL];
+    void (^completion) (BOOL) = ^(BOOL finished) {
+        [backgroundAudioPlayer stop];
+        [backgroundAudioPlayer prepareToPlay];
+    };
+    
+    [UIView animateWithDuration:3 animations:animation completion:completion];
 
    
+}
+-(void) playCarSound{
+    [backgroundAudioPlayer play];
+}
+
+//NSSet is an unnordered collection of distinct elements
+-(void) touchesMoved:(NSSet *) touches withEvent:(UIEvent *)event{
+    
 }
 @end

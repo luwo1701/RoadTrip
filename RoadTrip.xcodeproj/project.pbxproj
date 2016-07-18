@@ -20,6 +20,8 @@
 		C5A62E641D36E81500910E51 /* RoadTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E631D36E81500910E51 /* RoadTripTests.m */; };
 		C5A62E6F1D36E81500910E51 /* RoadTripUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */; };
 		C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E861D36F05600910E51 /* BurnRubber.aif */; };
+		C5CE95B71D3D626B0028EFD8 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */; };
+		C5CE95B91D3D634F0028EFD8 /* CarRunning.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripUITests.m; sourceTree = "<group>"; };
 		C5A62E701D36E81500910E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A62E861D36F05600910E51 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/BurnRubber.aif"; sourceTree = "<group>"; };
+		C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/BurnRubber.aif"; sourceTree = "<group>"; };
+		C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = CarRunning.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/CarRunning.aif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 		C5A62E451D36E81500910E51 /* RoadTrip */ = {
 			isa = PBXGroup;
 			children = (
+				C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */,
+				C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */,
 				C541F1091D3C287E009AB754 /* Controllers */,
 				C5A62E491D36E81500910E51 /* AppDelegate.h */,
 				C5A62E4A1D36E81500910E51 /* AppDelegate.m */,
@@ -274,8 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5CE95B71D3D626B0028EFD8 /* BurnRubber.aif in Resources */,
 				C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */,
 				C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */,
+				C5CE95B91D3D634F0028EFD8 /* CarRunning.aif in Resources */,
 				C5A62E561D36E81500910E51 /* Assets.xcassets in Resources */,
 				C5A62E541D36E81500910E51 /* Main.storyboard in Resources */,
 			);
