@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DestinationData</key>
+	<array>
+		<dict>
+			<key>New item</key>
+			<string></string>
+			<key>DestinationName</key>
+			<string>New York City</string>
+			<key>DestinationImage</key>
+			<string>NYCImage</string>
+			<key>DestinationLocation</key>
+			<dict>
+				<key>Title</key>
+				<string>New York City</string>
+				<key>Subtitle</key>
+				<string>A great City</string>
+				<key>Latitude</key>
+				<string>40.712756</string>
+				<key>Longitude</key>
+				<string>-74.006047</string>
+			</dict>
+			<key>Events</key>
+			<array>
+				<string>htttp://jessefeiler.com/NYC01.html</string>
+				<string>htttp://jessefeiler.com/NYC02.html</string>
+			</array>
+			<key>POIs</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>The Statue of Liberty</string>
+					<key>Subtitle</key>
+					<string>Pro-democracy symbol of freedom</string>
+					<key>Latitude</key>
+					<string>40.689244</string>
+					<key>Longitude</key>
+					<string>-74.044514</string>
+				</dict>
+			</array>
+			<key>Weather</key>
+			<string>http://forecast.weather.gov/MapClick.php?zoneid=NYZ072</string>
+		</dict>
+		<dict>
+			<key>DestinationName</key>
+			<string>San Francisco</string>
+			<key>DestinationImage</key>
+			<string>SFImage</string>
+			<key>DestinationLocation</key>
+			<dict>
+				<key>Title</key>
+				<string>San Francisco</string>
+				<key>Subtitle</key>
+				<string>A great city</string>
+				<key>Latitude</key>
+				<string>37.7793</string>
+				<key>Longitude</key>
+				<string>-122.4192</string>
+			</dict>
+			<key>Events</key>
+			<array>
+				<string>htttp://jessefeiler.com/SF01.html</string>
+				<string>htttp://jessefeiler.com/SF02.html</string>
+			</array>
+			<key>POIs</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Golden Gate Bridge</string>
+					<key>Subtitle</key>
+					<string>An internationally recongnized bridge</string>
+					<key>Latitude</key>
+					<string>37.819722</string>
+					<key>Longitude</key>
+					<string>-122.478611</string>
+				</dict>
+			</array>
+			<key>Weather</key>
+			<string>http://forecast.weather.gov/MapClick.php?site=mtr&amp;textField1=37.76&amp;textField2=-122.43@smap=1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

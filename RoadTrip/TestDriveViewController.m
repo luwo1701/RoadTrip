@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSURL* backgroundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CarRunning" ofType:@"aif"]];
-    //NSLog(backgroundURL.absoluteString);
+   // NSLog(backgroundURL.absoluteString);
     //since it's declared in the @interface backgroundAudio player doesn't have to be declared as such v
     //AVAudioPlayer* backgroundAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundURL error:nil];
 
@@ -45,7 +45,7 @@
     
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)burningRubberURL, &burningRubberSoundID);
     
-    
+    //h[self.testDriveButton setBackgroundImage: animatedImageNamed:@"Button" duration: 1 forState:UIControlStateNormal];
     //AVAudioPlayer* backgroundAudioPlayer = - (void)initWithContentsOfURL:backgroundURL
     //backgroundAudioPlayer.numb
     // Do any additional setup after loading the view.
@@ -67,8 +67,10 @@
 */
 
 - (IBAction)testDrive:(id)sender {
+    
     // plays the burning rubber audio
     AudioServicesPlaySystemSound (burningRubberSoundID);
+    
     //after a delay calls playCarSound method that does what it says
     [self performSelector:@selector(playCarSound) withObject:self afterDelay:0.2];
     
@@ -149,10 +151,32 @@
 }
 -(void) playCarSound{
     [backgroundAudioPlayer play];
+    //AudioServicesPlaySystemSound (burningRubberSoundID);
 }
 
 //NSSet is an unnordered collection of distinct elements
--(void) touchesMoved:(NSSet *) touches withEvent:(UIEvent *)event{
+-(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
     
+    //CGRect returns yes when a rectangle contains a point
+    if (CGRectContainsPoint(self.car.frame, [touch locationInView:self.view])){
+        touchInCar=YES;
+    }
+    else{
+        touchInCar = NO;
+    }
+    [super touchesBegan:touches withEvent:event];
+        
+}
+-(void) touchesMoved:(NSSet *) touches withEvent:(UIEvent *)event{
+    if (touchInCar){
+        UITouch *touch = [touches anyObject];
+        
+        //moves the center of the car to touch
+        self.car.center=[touch locationInView:self.view];
+    }
+    else{
+        [super touchesMoved:touches withEvent: event];
+    }
 }
 @end

@@ -22,6 +22,11 @@
 		C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E861D36F05600910E51 /* BurnRubber.aif */; };
 		C5CE95B71D3D626B0028EFD8 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */; };
 		C5CE95B91D3D634F0028EFD8 /* CarRunning.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */; };
+		C5CE95BB1D3D83E40028EFD8 /* Destinations.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95BA1D3D83E40028EFD8 /* Destinations.plist */; };
+		C5CE95BF1D3D8A7F0028EFD8 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE95BE1D3D8A7F0028EFD8 /* Trip.m */; };
+		C5CE95C21D3D8AD20028EFD8 /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE95C11D3D8AD20028EFD8 /* Destination.m */; };
+		C5CE95C41D3D8AF40028EFD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CE95C31D3D8AF40028EFD8 /* MapKit.framework */; };
+		C5CE95C61D3D8B670028EFD8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CE95C51D3D8B670028EFD8 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,13 @@
 		C5A62E861D36F05600910E51 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/BurnRubber.aif"; sourceTree = "<group>"; };
 		C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/BurnRubber.aif"; sourceTree = "<group>"; };
 		C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = CarRunning.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/CarRunning.aif"; sourceTree = "<group>"; };
+		C5CE95BA1D3D83E40028EFD8 /* Destinations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destinations.plist; sourceTree = "<group>"; };
+		C5CE95BD1D3D8A7F0028EFD8 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		C5CE95BE1D3D8A7F0028EFD8 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		C5CE95C01D3D8AD20028EFD8 /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destination.h; sourceTree = "<group>"; };
+		C5CE95C11D3D8AD20028EFD8 /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Destination.m; sourceTree = "<group>"; };
+		C5CE95C31D3D8AF40028EFD8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C5CE95C51D3D8B670028EFD8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5CE95C61D3D8B670028EFD8 /* CoreLocation.framework in Frameworks */,
+				C5CE95C41D3D8AF40028EFD8 /* MapKit.framework in Frameworks */,
 				C56291281D3B2AC900A382C8 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +122,8 @@
 		C5A62E3A1D36E81500910E51 = {
 			isa = PBXGroup;
 			children = (
+				C5CE95C51D3D8B670028EFD8 /* CoreLocation.framework */,
+				C5CE95C31D3D8AF40028EFD8 /* MapKit.framework */,
 				C56291271D3B2AC900A382C8 /* SystemConfiguration.framework */,
 				C5A62E451D36E81500910E51 /* RoadTrip */,
 				C5A62E621D36E81500910E51 /* RoadTripTests */,
@@ -129,6 +145,7 @@
 		C5A62E451D36E81500910E51 /* RoadTrip */ = {
 			isa = PBXGroup;
 			children = (
+				C5CE95BC1D3D8A2F0028EFD8 /* Model Classes */,
 				C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */,
 				C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */,
 				C541F1091D3C287E009AB754 /* Controllers */,
@@ -154,6 +171,7 @@
 				C56291251D3B294E00A382C8 /* Reachability.m */,
 				C5A62E471D36E81500910E51 /* main.m */,
 				C5A62E861D36F05600910E51 /* BurnRubber.aif */,
+				C5CE95BA1D3D83E40028EFD8 /* Destinations.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,6 +192,17 @@
 				C5A62E701D36E81500910E51 /* Info.plist */,
 			);
 			path = RoadTripUITests;
+			sourceTree = "<group>";
+		};
+		C5CE95BC1D3D8A2F0028EFD8 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C5CE95BD1D3D8A7F0028EFD8 /* Trip.h */,
+				C5CE95BE1D3D8A7F0028EFD8 /* Trip.m */,
+				C5CE95C01D3D8AD20028EFD8 /* Destination.h */,
+				C5CE95C11D3D8AD20028EFD8 /* Destination.m */,
+			);
+			name = "Model Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CE95B71D3D626B0028EFD8 /* BurnRubber.aif in Resources */,
+				C5CE95BB1D3D83E40028EFD8 /* Destinations.plist in Resources */,
 				C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */,
 				C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */,
 				C5CE95B91D3D634F0028EFD8 /* CarRunning.aif in Resources */,
@@ -312,6 +342,8 @@
 			files = (
 				C5A62E4B1D36E81500910E51 /* AppDelegate.m in Sources */,
 				C541F10C1D3C28EE009AB754 /* TestDriveViewController.m in Sources */,
+				C5CE95C21D3D8AD20028EFD8 /* Destination.m in Sources */,
+				C5CE95BF1D3D8A7F0028EFD8 /* Trip.m in Sources */,
 				C5A62E4E1D36E81500910E51 /* MasterViewController.m in Sources */,
 				C5A62E481D36E81500910E51 /* main.m in Sources */,
 				C5A62E511D36E81500910E51 /* DetailViewController.m in Sources */,
