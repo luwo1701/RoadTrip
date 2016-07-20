@@ -5,20 +5,18 @@
 	<key>DestinationData</key>
 	<array>
 		<dict>
-			<key>New item</key>
-			<string></string>
 			<key>DestinationName</key>
 			<string>New York City</string>
 			<key>DestinationImage</key>
-			<string>NYCImage</string>
+			<string>NYCImage_iPhone</string>
 			<key>DestinationLocation</key>
 			<dict>
 				<key>Title</key>
 				<string>New York City</string>
 				<key>Subtitle</key>
-				<string>A great City</string>
+				<real>0</real>
 				<key>Latitude</key>
-				<string>40.712756</string>
+				<real>40.712756</real>
 				<key>Longitude</key>
 				<string>-74.006047</string>
 			</dict>
@@ -55,9 +53,9 @@
 				<key>Subtitle</key>
 				<string>A great city</string>
 				<key>Latitude</key>
-				<string>37.7793</string>
+				<real>37.7793</real>
 				<key>Longitude</key>
-				<string>-122.4192</string>
+				<real>-122.4192</real>
 			</dict>
 			<key>Events</key>
 			<array>

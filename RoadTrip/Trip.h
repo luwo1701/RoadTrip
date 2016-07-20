@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mapkit/Mapkit.h>
 
 @interface Trip : NSObject
 
+-(instancetype) initWithDestinationIndex:(int)destinationIndex;
+-(UIImage *) destinationImage;
+-(NSString *) destinationName;
+-(CLLocationCoordinate2D) destinationCoordinate;
 @end

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "Reachability.h"
+#import "Trip.h"
+
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -42,8 +44,9 @@
         [vc presentViewController:alert animated:YES completion:nil];
         
         
+        
     }
-    
+    [self createDestinationModel:0];
     return YES;
 }
 
@@ -80,6 +83,9 @@
     } else {
         return NO;
     }
+}
+-(void) createDestinationModel:(int)destinationIndex{
+    self.trip = [[Trip alloc] initWithDestinationIndex:destinationIndex];
 }
 
 @end

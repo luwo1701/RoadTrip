@@ -20,8 +20,8 @@
 		C5A62E641D36E81500910E51 /* RoadTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E631D36E81500910E51 /* RoadTripTests.m */; };
 		C5A62E6F1D36E81500910E51 /* RoadTripUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */; };
 		C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E861D36F05600910E51 /* BurnRubber.aif */; };
-		C5CE95B71D3D626B0028EFD8 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */; };
-		C5CE95B91D3D634F0028EFD8 /* CarRunning.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */; };
+		C5C4517E1D4015FF00FEB369 /* DestinationImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4517D1D4015FF00FEB369 /* DestinationImage_iPhone.png */; };
+		C5C451801D40170A00FEB369 /* NYCImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4517F1D40170A00FEB369 /* NYCImage_iPhone.png */; };
 		C5CE95BB1D3D83E40028EFD8 /* Destinations.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95BA1D3D83E40028EFD8 /* Destinations.plist */; };
 		C5CE95BF1D3D8A7F0028EFD8 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE95BE1D3D8A7F0028EFD8 /* Trip.m */; };
 		C5CE95C21D3D8AD20028EFD8 /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CE95C11D3D8AD20028EFD8 /* Destination.m */; };
@@ -71,6 +71,8 @@
 		C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripUITests.m; sourceTree = "<group>"; };
 		C5A62E701D36E81500910E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A62E861D36F05600910E51 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/BurnRubber.aif"; sourceTree = "<group>"; };
+		C5C4517D1D4015FF00FEB369 /* DestinationImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DestinationImage_iPhone.png; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/DestinationImage_iPhone.png"; sourceTree = "<group>"; };
+		C5C4517F1D40170A00FEB369 /* NYCImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NYCImage_iPhone.png; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/NYCImage_iPhone.png"; sourceTree = "<group>"; };
 		C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/BurnRubber.aif"; sourceTree = "<group>"; };
 		C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = CarRunning.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/CarRunning.aif"; sourceTree = "<group>"; };
 		C5CE95BA1D3D83E40028EFD8 /* Destinations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destinations.plist; sourceTree = "<group>"; };
@@ -156,7 +158,6 @@
 				C5A62E4F1D36E81500910E51 /* DetailViewController.h */,
 				C5A62E501D36E81500910E51 /* DetailViewController.m */,
 				C5A62E521D36E81500910E51 /* Main.storyboard */,
-				C5A62E551D36E81500910E51 /* Assets.xcassets */,
 				C5A62E571D36E81500910E51 /* LaunchScreen.storyboard */,
 				C5A62E5A1D36E81500910E51 /* Info.plist */,
 				C5A62E461D36E81500910E51 /* Supporting Files */,
@@ -201,6 +202,9 @@
 				C5CE95BE1D3D8A7F0028EFD8 /* Trip.m */,
 				C5CE95C01D3D8AD20028EFD8 /* Destination.h */,
 				C5CE95C11D3D8AD20028EFD8 /* Destination.m */,
+				C5A62E551D36E81500910E51 /* Assets.xcassets */,
+				C5C4517F1D40170A00FEB369 /* NYCImage_iPhone.png */,
+				C5C4517D1D4015FF00FEB369 /* DestinationImage_iPhone.png */,
 			);
 			name = "Model Classes";
 			sourceTree = "<group>";
@@ -309,11 +313,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5CE95B71D3D626B0028EFD8 /* BurnRubber.aif in Resources */,
 				C5CE95BB1D3D83E40028EFD8 /* Destinations.plist in Resources */,
 				C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */,
 				C5A62E591D36E81500910E51 /* LaunchScreen.storyboard in Resources */,
-				C5CE95B91D3D634F0028EFD8 /* CarRunning.aif in Resources */,
+				C5C451801D40170A00FEB369 /* NYCImage_iPhone.png in Resources */,
+				C5C4517E1D4015FF00FEB369 /* DestinationImage_iPhone.png in Resources */,
 				C5A62E561D36E81500910E51 /* Assets.xcassets in Resources */,
 				C5A62E541D36E81500910E51 /* Main.storyboard in Resources */,
 			);
