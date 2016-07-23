@@ -117,6 +117,12 @@
 			children = (
 				C541F10A1D3C28EE009AB754 /* TestDriveViewController.h */,
 				C541F10B1D3C28EE009AB754 /* TestDriveViewController.m */,
+				C5A62E491D36E81500910E51 /* AppDelegate.h */,
+				C5A62E4A1D36E81500910E51 /* AppDelegate.m */,
+				C5A62E4C1D36E81500910E51 /* MasterViewController.h */,
+				C5A62E4D1D36E81500910E51 /* MasterViewController.m */,
+				C5A62E4F1D36E81500910E51 /* DetailViewController.h */,
+				C5A62E501D36E81500910E51 /* DetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -151,12 +157,6 @@
 				C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */,
 				C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */,
 				C541F1091D3C287E009AB754 /* Controllers */,
-				C5A62E491D36E81500910E51 /* AppDelegate.h */,
-				C5A62E4A1D36E81500910E51 /* AppDelegate.m */,
-				C5A62E4C1D36E81500910E51 /* MasterViewController.h */,
-				C5A62E4D1D36E81500910E51 /* MasterViewController.m */,
-				C5A62E4F1D36E81500910E51 /* DetailViewController.h */,
-				C5A62E501D36E81500910E51 /* DetailViewController.m */,
 				C5A62E521D36E81500910E51 /* Main.storyboard */,
 				C5A62E571D36E81500910E51 /* LaunchScreen.storyboard */,
 				C5A62E5A1D36E81500910E51 /* Info.plist */,

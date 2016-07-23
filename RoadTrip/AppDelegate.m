@@ -12,6 +12,7 @@
 #import "Trip.h"
 
 
+
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
 @end
@@ -46,6 +47,7 @@
         
         
     }
+    //calls createDestinationModel
     [self createDestinationModel:0];
     return YES;
 }
@@ -84,6 +86,10 @@
         return NO;
     }
 }
+
+#pragma mark - Initialization
+
+//creates Trip object with index 0 specified in didFinishLaunchingWithOptions
 -(void) createDestinationModel:(int)destinationIndex{
     self.trip = [[Trip alloc] initWithDestinationIndex:destinationIndex];
 }

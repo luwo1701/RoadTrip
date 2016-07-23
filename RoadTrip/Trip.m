@@ -8,6 +8,7 @@
 
 #import "Trip.h"
 #import "Destination.h"
+
 @interface Trip ()
     @property (strong,nonatomic) NSDictionary *destinationData;
     @property (strong,nonatomic) Destination *destination;
@@ -28,13 +29,13 @@
     return self;
 }
 -(UIImage *) destinationImage {
-    return self.destinationImage;
+    return self.destination.destinationImage;
 }
 -(NSString *) destinationName {
-    return self.destinationName;
+    return self.destination.destinationName;
 }
 -(CLLocationCoordinate2D) destinationCoordinate{
-    return self.destinationCoordinate;
+    return self.destination.coordinate;
 }
 
 @end
