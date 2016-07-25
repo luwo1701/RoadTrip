@@ -38,4 +38,8 @@
     return self.destination.coordinate;
 }
 
+-(NSString *) weather {
+    return _destinationData[@"Weather"];
+}
+
 @end

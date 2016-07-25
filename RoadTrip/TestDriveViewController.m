@@ -30,23 +30,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL* backgroundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CarRunning" ofType:@"aif"]];
+    //NSURL* backgroundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CarRunning" ofType:@"aif"]];
    // NSLog(backgroundURL.absoluteString);
     //since it's declared in the @interface backgroundAudio player doesn't have to be declared as such v
     //AVAudioPlayer* backgroundAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundURL error:nil];
 
-    backgroundAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundURL error:nil];
+    //backgroundAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundURL error:nil];
     
-    backgroundAudioPlayer.numberOfLoops = -1;
-    [backgroundAudioPlayer prepareToPlay];
+    //backgroundAudioPlayer.numberOfLoops = -1;
+    //[backgroundAudioPlayer prepareToPlay];
     
-    NSURL* burningRubberURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"BurnRubber" ofType:@"aif"]];
+   // NSURL* burningRubberURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"BurnRubber" ofType:@"aif"]];
     
     
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)burningRubberURL, &burningRubberSoundID);
+   // AudioServicesCreateSystemSoundID((__bridge CFURLRef)burningRubberURL, &burningRubberSoundID);
     
-    //h[self.testDriveButton setBackgroundImage: animatedImageNamed:@"Button" duration: 1 forState:UIControlStateNormal];
-    //AVAudioPlayer* backgroundAudioPlayer = - (void)initWithContentsOfURL:backgroundURL
+    //[self.testDriveButton setBackgroundImage: animatedImageNamed:@"Button" duration: 1 forState:UIControlStateNormal];
+   // AVAudioPlayer* backgroundAudioPlayer = - (void)initWithContentsOfURL:backgroundURL
     //backgroundAudioPlayer.numb
     // Do any additional setup after loading the view.
 }
@@ -69,10 +69,10 @@
 - (IBAction)testDrive:(id)sender {
     
     // plays the burning rubber audio
-    AudioServicesPlaySystemSound (burningRubberSoundID);
+    //AudioServicesPlaySystemSound (burningRubberSoundID);
     
     //after a delay calls playCarSound method that does what it says
-    [self performSelector:@selector(playCarSound) withObject:self afterDelay:0.2];
+    //[self performSelector:@selector(playCarSound) withObject:self afterDelay:0.2];
     
     //make an object that is the x coordinate of the cars center and y coordinate is top of the screen + half the size of the car images frame plus 100 for the toolbar and start button
     CGPoint center = CGPointMake(self.car.center.x, self.view.frame.origin.y + self.car.frame.size.height/2 + 100);
@@ -150,7 +150,7 @@
    
 }
 -(void) playCarSound{
-    [backgroundAudioPlayer play];
+    //[backgroundAudioPlayer play];
     //AudioServicesPlaySystemSound (burningRubberSoundID);
 }
 

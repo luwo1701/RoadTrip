@@ -24,13 +24,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     AppDelegate *appdelegate = [[UIApplication sharedApplication]delegate];
     self.title = appdelegate.trip.destinationName;
-    
     //app delegate instantiated Trip class so we can use it
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[appdelegate.trip destinationImage]];
     self.tableView.backgroundView = imageView;
     
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
         //self.title=@"Road Trip";
+    // master view now recognizes a left swipe and calls handleSwipeGesture method within this controller
+    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeGesture:)];
+    swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeGesture];
 
 }
 
@@ -45,6 +48,15 @@
 }
 - (void) tableView: (UITableView *) tableView willDisplayCell:(UITableViewCell*)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     cell.backgroundColor = [UIColor clearColor];
+}
+
+- (IBAction)handleSwipeGesture:(id)sender{
+    //finds main.storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //identifies the specific view controller i want to push
+    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"TestDriveID"];
+    [[self navigationController] pushViewController:viewController animated:YES];
+    
 }
 
 

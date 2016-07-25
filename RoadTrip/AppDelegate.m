@@ -30,6 +30,7 @@
     NetworkStatus networkStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
     
     if (networkStatus == NotReachable){
+        
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
                                                                        message:@"This is an alert."
                                                                 preferredStyle:UIAlertControllerStyleAlert];
@@ -70,6 +71,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

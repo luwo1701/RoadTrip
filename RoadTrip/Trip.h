@@ -15,4 +15,5 @@
 -(UIImage *) destinationImage;
 -(NSString *) destinationName;
 -(CLLocationCoordinate2D) destinationCoordinate;
+-(NSString *) weather;
 @end

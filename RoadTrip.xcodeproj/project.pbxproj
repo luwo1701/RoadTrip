@@ -20,6 +20,11 @@
 		C5A62E641D36E81500910E51 /* RoadTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E631D36E81500910E51 /* RoadTripTests.m */; };
 		C5A62E6F1D36E81500910E51 /* RoadTripUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */; };
 		C5A62E871D36F05600910E51 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = C5A62E861D36F05600910E51 /* BurnRubber.aif */; };
+		C5AA70D31D46BD5C00AE70B5 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA70D21D46BD5C00AE70B5 /* WeatherViewController.m */; };
+		C5AA70D61D46BD6C00AE70B5 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA70D51D46BD6C00AE70B5 /* EventsViewController.m */; };
+		C5AA70D91D46BD7E00AE70B5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA70D81D46BD7E00AE70B5 /* MapViewController.m */; };
+		C5AA70DC1D46BD9000AE70B5 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA70DB1D46BD9000AE70B5 /* FindViewController.m */; };
+		C5AA70DF1D46BD9C00AE70B5 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA70DE1D46BD9C00AE70B5 /* DestinationViewController.m */; };
 		C5C4517E1D4015FF00FEB369 /* DestinationImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4517D1D4015FF00FEB369 /* DestinationImage_iPhone.png */; };
 		C5C451801D40170A00FEB369 /* NYCImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C4517F1D40170A00FEB369 /* NYCImage_iPhone.png */; };
 		C5CE95BB1D3D83E40028EFD8 /* Destinations.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5CE95BA1D3D83E40028EFD8 /* Destinations.plist */; };
@@ -71,6 +76,16 @@
 		C5A62E6E1D36E81500910E51 /* RoadTripUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripUITests.m; sourceTree = "<group>"; };
 		C5A62E701D36E81500910E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A62E861D36F05600910E51 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/BurnRubber.aif"; sourceTree = "<group>"; };
+		C5AA70D11D46BD5C00AE70B5 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		C5AA70D21D46BD5C00AE70B5 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		C5AA70D41D46BD6C00AE70B5 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		C5AA70D51D46BD6C00AE70B5 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		C5AA70D71D46BD7E00AE70B5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C5AA70D81D46BD7E00AE70B5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C5AA70DA1D46BD9000AE70B5 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		C5AA70DB1D46BD9000AE70B5 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		C5AA70DD1D46BD9C00AE70B5 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
+		C5AA70DE1D46BD9C00AE70B5 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
 		C5C4517D1D4015FF00FEB369 /* DestinationImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DestinationImage_iPhone.png; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/DestinationImage_iPhone.png"; sourceTree = "<group>"; };
 		C5C4517F1D40170A00FEB369 /* NYCImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NYCImage_iPhone.png; path = "../../../../Downloads/iOS 7 RoadTrip Resources 2/NYCImage_iPhone.png"; sourceTree = "<group>"; };
 		C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = BurnRubber.aif; path = "../../../../Downloads/iOS 7 RoadTrip Resources 3/BurnRubber.aif"; sourceTree = "<group>"; };
@@ -123,6 +138,18 @@
 				C5A62E4D1D36E81500910E51 /* MasterViewController.m */,
 				C5A62E4F1D36E81500910E51 /* DetailViewController.h */,
 				C5A62E501D36E81500910E51 /* DetailViewController.m */,
+				C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */,
+				C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */,
+				C5AA70D11D46BD5C00AE70B5 /* WeatherViewController.h */,
+				C5AA70D21D46BD5C00AE70B5 /* WeatherViewController.m */,
+				C5AA70D41D46BD6C00AE70B5 /* EventsViewController.h */,
+				C5AA70D51D46BD6C00AE70B5 /* EventsViewController.m */,
+				C5AA70D71D46BD7E00AE70B5 /* MapViewController.h */,
+				C5AA70D81D46BD7E00AE70B5 /* MapViewController.m */,
+				C5AA70DA1D46BD9000AE70B5 /* FindViewController.h */,
+				C5AA70DB1D46BD9000AE70B5 /* FindViewController.m */,
+				C5AA70DD1D46BD9C00AE70B5 /* DestinationViewController.h */,
+				C5AA70DE1D46BD9C00AE70B5 /* DestinationViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -154,8 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				C5CE95BC1D3D8A2F0028EFD8 /* Model Classes */,
-				C5CE95B81D3D634F0028EFD8 /* CarRunning.aif */,
-				C5CE95B61D3D626B0028EFD8 /* BurnRubber.aif */,
 				C541F1091D3C287E009AB754 /* Controllers */,
 				C5A62E521D36E81500910E51 /* Main.storyboard */,
 				C5A62E571D36E81500910E51 /* LaunchScreen.storyboard */,
@@ -345,13 +370,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A62E4B1D36E81500910E51 /* AppDelegate.m in Sources */,
+				C5AA70D61D46BD6C00AE70B5 /* EventsViewController.m in Sources */,
+				C5AA70DF1D46BD9C00AE70B5 /* DestinationViewController.m in Sources */,
 				C541F10C1D3C28EE009AB754 /* TestDriveViewController.m in Sources */,
+				C5AA70DC1D46BD9000AE70B5 /* FindViewController.m in Sources */,
 				C5CE95C21D3D8AD20028EFD8 /* Destination.m in Sources */,
 				C5CE95BF1D3D8A7F0028EFD8 /* Trip.m in Sources */,
+				C5AA70D31D46BD5C00AE70B5 /* WeatherViewController.m in Sources */,
 				C5A62E4E1D36E81500910E51 /* MasterViewController.m in Sources */,
 				C5A62E481D36E81500910E51 /* main.m in Sources */,
 				C5A62E511D36E81500910E51 /* DetailViewController.m in Sources */,
 				C56291261D3B294E00A382C8 /* Reachability.m in Sources */,
+				C5AA70D91D46BD7E00AE70B5 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
